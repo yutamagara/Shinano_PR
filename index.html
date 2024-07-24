@@ -3,83 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>信濃町PRサイト</title>
+  <title>長野ブランド PRサイト</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      color: #333;
-      background-color: #f8f9fa;
-    }
-    .navbar {
-      background-color: #006400;
-    }
-    .navbar-brand, .nav-link {
-      color: #fff !important;
+      font-family: Arial, sans-serif;
     }
     .navbar-brand {
-      font-weight: 700;
+      font-weight: bold;
+      font-size: 1.5rem;
     }
-    .nav-link {
-      font-weight: 400;
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 2rem;
-      font-weight: 700;
-      color: #006400;
+    .btn-custom {
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 1rem;
     }
     .card {
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .card-title {
-      font-weight: 700;
-      color: #006400;
+      margin-bottom: 1.5rem;
     }
     footer {
       text-align: center;
       padding: 20px;
       background-color: #fdfdfd;
-      margin-top: 2rem;
-      border-top: 1px solid #e4e4e4;
     }
-    footer p {
-      margin: 0;
-      color: #666;
+    .bg-primary-custom {
+      background-color: #2a9d8f;
     }
-    .btn-custom {
-      border-radius: 50px;
-      padding: 10px 20px;
-      font-weight: 700;
-      text-transform: uppercase;
-      background-color: #006400;
-      color: #fff;
-      border: none;
-      transition: background-color 0.3s, transform 0.3s;
+    .text-primary-custom {
+      color: #2a9d8f;
     }
-    .btn-custom:hover {
-      background-color: #004d00;
-      transform: scale(1.05);
-    }
-    .btn-custom:focus {
-      box-shadow: none;
-    }
-    .img-fluid.rounded {
-      border-radius: 10px;
-    }
-    .card-img-top.rounded-top {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
     }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#">信濃町の魅力</a>
+      <a class="navbar-brand" href="#">長野ブランド</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -87,7 +49,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">信濃町について</a>
+            <a class="nav-link" href="#about">長野について</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#attractions">見どころ</a>
@@ -99,62 +61,62 @@
 
   <section id="about" class="py-5">
     <div class="container">
-      <h3 class="section-title">信濃町について</h3>
       <div class="row">
         <div class="col-md-4 text-center">
-          <img src="./shinano-town.jpg" alt="信濃町の風景" class="img-fluid rounded" style="max-width: 100%;">
+          <img src="./nagano-scenery.jpg" alt="長野の風景" class="img-fluid" style="max-width: 100%;">
         </div>
         <div class="col-md-8">
-          <p>信濃町は長野県の北部に位置する、美しい自然と豊かな文化を誇る地域です。四季折々の風景が楽しめる観光地として人気があり、特に高原の広がる美しい風景とクリアな空気が魅力です。<br>春には満開の桜、夏には青々とした田んぼ、秋には紅葉、冬には雪景色と、訪れるたびに違った魅力を感じることができます。また、地元の人々の温かさも魅力の一つです。</p>
+          <h3 class="text-primary-custom">長野について</h3>
+          <p>長野県は、日本の中央部に位置する、自然の美しさと豊かな文化を誇る地域です。四季折々の風景が魅力で、特に山々の景観と澄んだ空気が訪れる人々を引きつけます。<br>春には桜が咲き誇り、夏には緑豊かな山々、秋には色鮮やかな紅葉、冬には雪景色と、各季節に違った魅力を提供します。また、地元の温かいおもてなしも特徴です。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="attractions" class="py-5">
+  <section id="attractions" class="py-5 bg-primary-custom text-white">
     <div class="container">
-      <h3 class="section-title">見どころ</h3>
+      <h3 class="text-center">見どころ</h3>
       <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./nature.jpg" class="card-img-top rounded-top" alt="自然の風景">
+        <div class="col-md-4">
+          <div class="card bg-light">
+            <img src="./mountain.jpg" class="card-img-top" alt="自然の風景">
             <div class="card-body">
-              <h5 class="card-title">黒姫山</h5>
+              <h5 class="card-title text-primary-custom">志賀高原</h5>
               <p class="card-text">
-                黒姫山は信濃町を象徴する山で、四季折々の美しい自然が楽しめます。春から夏にかけてはハイキングや登山、秋には紅葉狩り、冬にはスキーやスノーボードと、アウトドアアクティビティが充実しています。特に、頂上からの眺めは絶景で、訪れる人々を魅了します。
+                志賀高原は、長野県を代表する観光地で、四季折々の美しい自然が楽しめます。春から夏にはハイキングやトレッキング、秋には紅葉狩り、冬にはスキーやスノーボードが楽しめます。特に、雄大な山々と広がる高原の風景は訪れる人々を魅了します。
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./culture.jpg" class="card-img-top rounded-top" alt="文化遺産">
+        <div class="col-md-4">
+          <div class="card bg-light">
+            <img src="./cultural-site.jpg" class="card-img-top" alt="文化遺産">
             <div class="card-body">
-              <h5 class="card-title">黒姫高原</h5>
+              <h5 class="card-title text-primary-custom">上田城</h5>
               <p class="card-text">
-                黒姫高原は、美しい花畑や広大な草原が広がる観光スポットです。夏にはラベンダーやひまわりが咲き乱れ、訪れる人々を魅了します。また、黒姫高原スノーパークでは、冬季にはスキーやスノーボードが楽しめます。四季を通じて多彩なアクティビティが楽しめるのが魅力です。
+                上田城は、長野県の歴史的な名所で、戦国時代の城跡を散策できます。城跡や博物館では、長野の歴史や文化について学ぶことができます。特に、春には桜が咲き誇り、美しい風景と共に歴史に触れることができます。
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./local-food.jpg" class="card-img-top rounded-top" alt="地元の食事">
+        <div class="col-md-4">
+          <div class="card bg-light">
+            <img src="./local-food.jpg" class="card-img-top" alt="地元の食事">
             <div class="card-body">
-              <h5 class="card-title">道の駅しなの</h5>
+              <h5 class="card-title text-primary-custom">道の駅信濃</h5>
               <p class="card-text">
-                道の駅しなのは、地元の新鮮な農産物や特産品が揃う人気スポットです。信濃町ならではの季節の野菜や果物、お土産品が豊富に揃っており、観光客にも大変人気です。地元の食材を使った料理も楽しめるレストランもあり、美味しい食事を楽しむことができます。
+                道の駅信濃では、新鮮な地元の農産物や特産品が揃っています。長野県ならではの野菜や果物、お土産品が豊富にあり、地元の料理も楽しめるレストランがあります。地域の味覚を満喫できるスポットです。
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./local-culture.jpg" class="card-img-top rounded-top" alt="地元の文化">
+        <div class="col-md-4">
+          <div class="card bg-light" style="margin-top: 24px;">
+            <img src="./museum.jpg" class="card-img-top" alt="地元の文化">
             <div class="card-body">
-              <h5 class="card-title">ナウマンゾウ博物館</h5>
+              <h5 class="card-title text-primary-custom">長野県立歴史館</h5>
               <p class="card-text">
-                ナウマンゾウ博物館は、信濃町の歴史や文化を学べる施設です。ここでは、ナウマンゾウの化石や出土品を展示しており、信濃町の歴史に触れることができます。また、地元の伝統文化や風習についても学ぶことができ、家族連れにも人気のスポットです。
+                長野県立歴史館では、長野県の歴史や文化を学ぶことができます。展示品には地域の考古学的発見や文化遺産が含まれており、訪れることで地域の歴史に触れることができます。家族連れにも適した施設です。
               </p>
             </div>
           </div>
@@ -165,7 +127,7 @@
 
   <footer class="mt-5">
     <div class="container">
-      <p>&copy; 2023 信濃町観光協会</p>
+      <p>&copy; 2024 長野ブランド観光協会</p>
     </div>
   </footer>
 
